@@ -10,6 +10,8 @@
   
   ## Description  
   This is a budget tracking app that can be used online or offline. Utilizating caches, a user's transactions are stored and updated when moving between offline and online. This app is also a Progressive Web Application (PWA) which allows user's to download it to their device. The offline/online functionality works in tandem with this as a static copy of the app is kept when offline that way a user is still able to use the app regardless of connection. 
+  
+  ![Snapshot](https://raw.githubusercontent.com/TylerBYeager/budget-tracker-pwa/main/public/images/Snapshot.png)
 
   ## Code Snippets
   Here are some code snippets and what they accomplished. This first snippet is the manifest.webmanifest file. This string of code creates the webmanifest which is the first step of creating a PWA. 
