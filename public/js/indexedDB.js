@@ -15,6 +15,18 @@ request.onsuccess = function(event) {
     }
 };
 
+request.onerror = function(event) {
+    console.log("Sorry it seems we have an error. Error code:" + event.target.errorCode);
+};
+
+function saveRecord(record) {
+    const transaction = db.transaction(["pending"], "readwrite");
+
+    const store = transaction.objectStore("pending");
+
+    store.add(record);
+};
+
 function checkDatabase() {
     const transaction = db.transaction(["pending"], "readwrite");
 
